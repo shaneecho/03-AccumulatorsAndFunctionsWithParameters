@@ -10,7 +10,7 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher, Mark Hays,
 
 ###############################################################################
 #
-# TODO: 2.
+# DONE: 2.
 #   RUN this program.  Then answer the following,
 #     GETTING HELP AS NEED! (Ask questions!!!)
 #
@@ -44,18 +44,17 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher, Mark Hays,
 #             you can construct OTHER than Circle and Point:
 #                square
 #                regular polygon
-#
 #          -- Write the names of three METHODs that Circle objects have:
 #                rg.draw_circle
 #          -- Write the names of three INSTANCE VARIABLEs that Circle
 #             objects have:
-#                 center radius
+#                x coordinate of center, y coordinate of center radius
 #     f. What does a RoseWindow RENDER method do?
-#            WRITE_YOUR_ANSWER_HERE,_REPLACING_THIS
+#            put all the objects into the screen
 #
 #     g. When is a RoseWindow close_on_mouse_click method call
 #        necessary?  Why?
-#            WRITE_YOUR_ANSWER_HERE,_REPLACING_THIS
+#            Yes, because it is the function to change from one screen to another
 #
 #   ASK QUESTIONS ** NOW ** if you do not understand how the
 #     RoseGraphics graphics system works.
