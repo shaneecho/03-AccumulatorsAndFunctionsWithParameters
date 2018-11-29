@@ -17,7 +17,7 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher, Mark Hays,
 #     a. For the RoseGraphics coordinate system:
 #
 #        -- Where is the (0, 0) point on the screen?
-#              In the middle of the screen
+#              In the upper left corner of the screen
 #
 #        -- In what direction on the screen
 #           does the positive X-axis point?
@@ -25,30 +25,33 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher, Mark Hays,
 #
 #        -- In what direction on the screen
 #           does the positive Y-axis point?
-#              upward
+#              downward
 #
 #     b. Write a line of code that constructs a RoseWindow object:
-#            window = rg.TurtleWindow()
+#            window = rg.RoseWindow()
 #
 #     c. What is the default height of a RoseWindow?
 #        (Use the HOVER trick to determine the answer to this question.)
-#            WRITE_YOUR_ANSWER_HERE,_REPLACING_THIS
+#            300
 #
 #     d. Write a line of code that construct a RoseWindow object
 #        whose height is 100:  (Use the HOVER trick to figure it out)
-#            WRITE_YOUR_ANSWER_HERE,_REPLACING_THIS
+#            rg.RoseWindow(height = 100)
 #
 #     e. Use the DOT trick to answer the following:
 #
 #          -- Write the names of two types of graphics objects that
 #             you can construct OTHER than Circle and Point:
-#                square
-#                regular polygon
+#                Botton
+#                Ellipse
 #          -- Write the names of three METHODs that Circle objects have:
-#                rg.draw_circle
+#                rg.Circle.fill_color
+#                rg.Circle.defaults
+#                rg.Circle.center
 #          -- Write the names of three INSTANCE VARIABLEs that Circle
 #             objects have:
-#                x coordinate of center, y coordinate of center radius
+#                center, radius, default
+
 #     f. What does a RoseWindow RENDER method do?
 #            put all the objects into the screen
 #
@@ -78,8 +81,6 @@ def main():
     example1()
     example2()
     example3()
-
-
 def example1():
     """ Displays an empty window. """
     window = rg.RoseWindow(500, 300, 'Example 1: An empty window')
