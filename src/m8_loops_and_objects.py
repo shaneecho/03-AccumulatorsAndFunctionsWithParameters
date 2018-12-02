@@ -247,7 +247,7 @@ def draw_cosines_and_sines():
     print('Running draw_cosines_and_sines:  See graphics window')
     print('--------------------------------------------------')
 
-    window = rg.RoseWindow(400,400)
+    window = rg.RoseWindow(400, 400)
     radii = 10
     for k in range(0, 101):
         center_point = rg.Point(200+(80*(math.cos(k))), 200+(80*(math.sin(k))))
