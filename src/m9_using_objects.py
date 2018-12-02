@@ -15,6 +15,8 @@ def main():
     """ Calls the other functions to demonstrate and/or test them. """
     # Test your functions by putting calls to them here:
     two_circles()
+    circle_and_rectangle()
+    lines()
 
 def two_circles():
     """
@@ -87,7 +89,30 @@ def circle_and_rectangle():
     # IMPORTANT: Use the DOT TRICK to guess the names of the relevant
     #       instance variables for outline thickness, etc.
     # -------------------------------------------------------------------------
+    window = rg.RoseWindow(400, 400)
+    center_point = rg.Point(50, 200)
+    point1 = rg.Point(100, 50)
+    point2 = rg.Point(400, 350)
+    circle = rg.Circle(center_point, 50)
+    rectangle = rg.Rectangle(point1, point2)
+    circle.fill_color = 'blue'
+    circle.attach_to(window)
+    rectangle.attach_to(window)
+    window.render()
+    window.close_on_mouse_click()
 
+    print(circle.outline_thickness)
+    print(circle.fill_color)
+    print(circle.center)
+    print(circle.center.x)
+    print(circle.center.y)
+
+    print(rectangle.outline_thickness)
+    print(rectangle.fill_color)
+    Reccenter = rg.Point((1/2)*(point1.x+point2.x), (1/2)* (point1.y + point2.y))
+    print(Reccenter)
+    print(Reccenter.x)
+    print(Reccenter.y)
 
 def lines():
     """
@@ -112,8 +137,27 @@ def lines():
     -- Waits for the user to press the mouse, then closes the window.
     """
     # TODO: 4. Implement and test this function.
+    window = rg.RoseWindow(400, 400)
+    start1 = rg.Point(50, 50)
+    end1 = rg.Point(200, 200)
+    start2 = rg.Point(50, 200)
+    end2 = rg.Point(200, 350)
+    line1 = rg.Line(start1, end1)
+    line2 = rg.Line(start2, end2)
+    line2.thickness = 3
+    line1.attach_to(window)
+    line2.attach_to(window)
+    window.render()
+    window.close_on_mouse_click()
 
-
+    midpoint1 = line1.get_midpoint()
+    midpoint2 = line2.get_midpoint()
+    print(midpoint1)
+    print(midpoint1.x)
+    print(midpoint1.y)
+    print(midpoint2)
+    print(midpoint2.x)
+    print(midpoint2.y)
 # -----------------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
 # -----------------------------------------------------------------------------
