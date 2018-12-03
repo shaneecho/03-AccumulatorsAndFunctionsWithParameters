@@ -68,8 +68,8 @@ def sum_powers(n, p):
     #   test cases; that would defeat the purpose of TESTING!
     # -------------------------------------------------------------------------
     sum = 0
-    for k in range (1,n+1):
-        sum = sum + k**p
+    for k in range (n):
+        sum = sum + (k+1)**p
     return(sum)
 
 def run_test_sum_powers_in_range():
@@ -126,8 +126,8 @@ def sum_powers_in_range(m, n, p):
     #   test cases; that would defeat the purpose of TESTING!
     # -------------------------------------------------------------------------
     sum = 0
-    for k in range(m, n+1):
-        sum = sum + k**p
+    for k in range(n-m+1):
+        sum = sum + (k+m)**p
     return(sum)
 
 # -----------------------------------------------------------------------------
